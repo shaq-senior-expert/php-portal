@@ -10,7 +10,7 @@ switch ($request) {
 		while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     		$linhas[] = $row;  
 		}
-		echo json_encode($linhas);
+		return json_encode($linhas);
 		break;
 	case 'POST':
 		$insert = json_decode($HTTP_RAW_POST_DATA);
@@ -19,7 +19,7 @@ switch ($request) {
 	case 'PUT':
 		$update = json_decode(file_get_contents('php://input'));
 		$id = $update->id;
-		mysql_query("UPDATE idoso SET email = '{$update->email}' WHERE id={$id}");
+		mysql_query("UPDATE idoso SET nome = '{$update->nome}',idade = '{$update->idade}',endereco = '{$update->endereco}',email = '{$update->email}' WHERE id={$id}");
 		break;
 	case 'DELETE':
 		$delete = json_decode(file_get_contents('php://input'));
