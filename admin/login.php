@@ -20,9 +20,11 @@
     </main>
 
     <div>
-    	<form>
-      		<input type="text" ng-model="login" placeholder="Digite seu usuario"></input>
-      		<input type="password" ng-model="senha" placeholder="Digite sua senha"></input>
+    	<form method="">
+        <label> Login: </label>
+        <br />
+      		<input type="text" ng-model="login" name="login" placeholder="Digite seu usuario" /> <br />
+      		<input type="password" ng-model="senha"name="senha" placeholder="Digite sua senha" /><br />
       		<input type="submit" ng-model="enviar" value"OK"></input>
   		</form>
     </div>
