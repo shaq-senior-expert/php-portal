@@ -1,7 +1,8 @@
 <?php
-require "bd.php";
 header('Content-Type: application/jason');
+require "bd.php";
 
+function Idoso(){
 $request = $_SERVER['REQUEST_METHOD'];
 switch ($request) {
 	case 'GET':
@@ -26,7 +27,5 @@ switch ($request) {
 		$id = $delete->id;
 		mysql_query("DELETE FROM idoso WHERE id={$id}");
 		break;
-	default:
-		# code...
-		break;
+	}
 }
