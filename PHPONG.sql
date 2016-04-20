@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `contato` (
   `id` int(11) NOT NULL,
-  `email` varchar(200) NOT NULL
-  `nome` varchar(200) NOT NULL
-  `assunto` varchar(100) NOT NULL
+  `email` varchar(200) NOT NULL,
+  `nome` varchar(200) NOT NULL,
+  `assunto` varchar(100) NOT NULL,
   `mensagem` varchar(400) NOT NULL
   
 
@@ -38,7 +38,7 @@ CREATE TABLE `contato` (
 
 CREATE TABLE `menu` (
   `id` int(11) NOT NULL,
-  `titulo` varchar(200) NOT NULL
+  `titulo` varchar(200) NOT NULL,
   `link` varchar(200) NOT NULL
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
