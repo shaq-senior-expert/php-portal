@@ -36,6 +36,13 @@ CREATE TABLE `contato` (
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(200) NOT NULL
+  `link` varchar(200) NOT NULL
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- --------------------------------------------------------
 
 --
