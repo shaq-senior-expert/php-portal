@@ -17,5 +17,5 @@ insert into conteudo(titulo, texto, data, usuario) values('Nossa ONG 3', 'Esta o
 insert into conteudo(titulo, texto, data, usuario) values('Nossa ONG 4', 'Esta ong da melhor idade visa acompanhar programadores com experiencia', '2016-04-27', 1);
 insert into conteudo(titulo, texto, data, usuario) values('Nossa ONG 5', 'Esta ong da melhor idade visa acompanhar programadores com experiencia', '2016-04-20', 1);
 insert into conteudo(titulo, texto, data, usuario) values('Nossa ONG 6', 'Esta ong da melhor idade visa acompanhar programadores com experiencia', '2016-04-15', 1);
-
+insert into conteudo(titulo, texto, data, usuario) values('Nossa ONG 7', 'Esta ong da melhor idade visa acompanhar programadores com experiencia', '2016-04-15', 1);
 
