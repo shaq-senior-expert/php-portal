@@ -1,0 +1,10 @@
+.menu {
+  position: relative;
+  left: 35%;
+}
+
+.menu nav>ul>li {
+  display: inline-block;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
