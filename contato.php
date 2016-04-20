@@ -8,5 +8,3 @@ switch ($request) {
 		mysql_query("INSERT INTO contato (email, nome, assunto, mensagem) VALUES ('{$insert->email}', '{$insert->nome}', '{$insert->assunto}', '{$insert->mensagem}')");
 		break;		
 }
-
-var_dump($insert);
