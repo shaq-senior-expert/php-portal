@@ -21,7 +21,6 @@ switch ($request) {
 		$id = $update->id;
 		mysql_query("UPDATE idoso SET email = '{$update->email}' WHERE id={$id}");
 		break;
-	
 	case 'DELETE':
 		$delete = json_decode(file_get_contents('php://input'));
 		$id = $delete->id;
