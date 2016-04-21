@@ -1,17 +1,21 @@
 <?php
-require "bd.php";
 header('Content_Type: application/json');
+require "bd.php";
 
-function RetornaMenu() {
+function RetornaMenu($mysqli) {
 	$request = $_SERVER['REQUEST_METHOD'];
 	switch ($request) {
 			case 'GET':
-			$result = mysql_query("SELECT * FROM menu");
-			$linhas = array();
-			while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-	    		$linhas[] = $row;  
+			$query = "SELECT * FROM menu";
+			if($result = $mysqli->query($query)) { 
+				$linhas = array();
+				while ($row = $result->fetch_assoc()) {
+		    		$linhas[] = $row;  
+				}
 			}
 			return json_encode($linhas);
 			break;
 	}
 }
+$result = RetornaMenu($mysqli);
+echo $result;
