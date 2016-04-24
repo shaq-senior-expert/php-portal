@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/jason');
 require "bd.php";
 
 function Usuario($mysqli) {
