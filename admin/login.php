@@ -20,7 +20,8 @@
     </main>
 
     <div>
-    	<form method="">
+      
+    	<form action="api_login.php" method="post">
         <label> Login: </label>
         <br />
       		<input type="text" ng-model="login" name="login" placeholder="Digite seu usuario" /> <br />
