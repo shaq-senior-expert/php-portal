@@ -5,8 +5,7 @@ require "login.php";
 
 function Idoso($mysqli){
 	if (!isAllowed($mysqli))
-		throw new Exception("Nao autorizado", 403);
-	
+		throw new Exception("Nao autorizado", 403);	
 	$request = $_SERVER['REQUEST_METHOD'];
 	switch ($request) {
 		case 'GET':
