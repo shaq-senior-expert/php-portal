@@ -1,7 +1,7 @@
 <?php
 header('Content_Type: application/json');
-require "bd.php";
-require "login.php";
+require "lib/bd.php";
+require "lib/login.php";
 
 function Contato($mysqli){
 	if (!isAllowed($mysqli))
