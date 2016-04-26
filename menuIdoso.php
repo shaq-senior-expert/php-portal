@@ -1,6 +1,7 @@
 <?php
 header('Content_Type: application/json');
 require "bd.php";
+require "login.php";
 
 function RetornaMenu($mysqli) {
 	if (!isAllowed($mysqli))
