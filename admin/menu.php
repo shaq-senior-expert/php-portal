@@ -1,7 +1,7 @@
 
 <?php
 header('Content_Type: application/json');
-require "bd.php";
+require "../bd.php";
 function RetornaMenu($mysqli) {
 	$request = $_SERVER['REQUEST_METHOD'];
 	switch ($request) {

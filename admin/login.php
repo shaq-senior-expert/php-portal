@@ -29,7 +29,7 @@
 
     <div class="container">
 
-      <form class="form-signin" action="api_login" method="POST">
+      <form class="form-signin" action="" method="POST">
         <h2 class="form-signin-heading">Sr. Idoso por favor realize o Login</h2>
         <label for="inputEmail" class="sr-only">Endereco de Email</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
