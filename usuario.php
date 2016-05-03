@@ -1,12 +1,23 @@
-{
-  "name": "Meu SILEX",
-  "version": "0.0.1",
-  "dependencies": {
-    "bootstrap": "~*",
-    "font-awesome": "~*",
-    "jquery": "~*"
-  }
-}
+<html>
+	<head>
+		<title>PAGINA DO SITE</title>
+		<script src="vendor/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var host = "http://localhost:8000/";
+				var nomeDoAluno = $("#nome").val();
+				var UriNome = host + "nome/"+nomeDoAluno;
+				$.get(UriNome, function( data ) {
+					$("#aluno").html(data.nome);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="hidden" id="nome" value="4 Linux" />
+		O Nome do aluno e: <span id="aluno"/>
+	</body>
+</html>
 
 <?php
 header('Content-Type: application/jason');
