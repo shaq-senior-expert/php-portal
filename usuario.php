@@ -1,3 +1,13 @@
+{
+  "name": "Meu SILEX",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~*",
+    "font-awesome": "~*",
+    "jquery": "~*"
+  }
+}
+
 <?php
 header('Content-Type: application/jason');
 require "bd.php";
